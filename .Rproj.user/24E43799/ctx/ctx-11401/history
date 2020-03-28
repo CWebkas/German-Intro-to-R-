@@ -1,0 +1,94 @@
+w <- 2+3
+load("exampleData.Rda")
+load("exampleData.Rda")
+rm(list = ls(all.names = TRUE))
+source('C:/Users/lukas/Dropbox/Loose Projects/Youtube/Intro R/samp.R', echo=TRUE)
+rm(list = ls(all.names = TRUE))
+load("exampleData.Rda")
+load("exampleData.Rda")
+rm(list = ls(all.names = TRUE))
+getwd()
+# 30 Zufallsziehungen aus Normalverteilungg (mean=0, sd=2)
+v1 <- rnorm(30,0,2)
+# 30 Zufallsziehungen aus Poissonverteilung (Erwartungswert=2)
+v2 <- rpois(30,2)
+# ein Faktor mit 30 Elementen
+v3 <- factor(rep(1:3,10),labels=c("lo","med","hi"))
+# character Vektor mit 30 Elementen
+v4 <- rep(c("EU","UN","OECD"),10)
+# Kombiniert diese vier elemente zu einem Dataframe
+df1 <- data.frame(v4,v1,v2,v3)
+View(df1)
+df1[1,1]
+df1[,1]           # wählt die erste Spalte/Variable aus
+df1[10,]          # Wählt die 10. Reihe
+df1[,"v1"]        # wählt die Variable "v1" (Über den Namen)
+df1$v1            # wählt auch die Variable "v1" (Über den Namen)
+library(wooldridge)
+library(wooldridge)
+data("bwght")
+is.na(bwght)
+which(is.na(bwght))
+bwght[5555]
+bwght[5555,]
+View(bwght)
+bwght[!complete.cases(bwght), ]
+bwght[is.na(bwght), ]
+lenNA <- bwght[rowSums(is.na(bwght)) > 0,]
+lenNA
+lenNA <- bwght[rowSums(is.na(bwght)) > 0,]
+lenNA
+bwght[!complete.cases(bwght), ]
+length(bwght[!complete.cases(bwght), ])
+nrows(bwght[!complete.cases(bwght), ])
+nrow(bwght[!complete.cases(bwght), ])
+library(tidyverse)
+glimpse(bwght)
+summary(bwght$bwghtlbs)
+boxplot(bwght$bwghtlbs)          #nicht so schön, lieber horizontal
+?boxplot                      #nachschauen
+boxplot(bwght$bwghtlbs,
+horizontal = TRUE     #besser
+)
+boxplot(bwght$bwghtlbs,
+horizontal = TRUE     #besser
+)
+height_hist <- hist(bwght$bwghtlbs,
+main = "Geburtsgewicht",
+xlab = "in lbs",
+ylab = "HÃ¤ufigkeit",
+col = "grey"
+)
+height_hist <- hist(bwght$bwghtlbs,
+main = "Geburtsgewicht",
+xlab = "in lbs",
+ylab = "Häufigkeit",
+col = "grey"
+)
+save(bwght, file = "bwght.Rda")
+getwd()
+rm(list = ls(all.names = TRUE))
+library(tidyverse)
+# Daten laden
+bwght <- load("bwght.Rda")
+View(bwght)
+load("C:/Users/lukas/Dropbox/Loose Projects/Youtube/Intro R/bwght.Rda")
+View(bwght)
+rm(list = ls(all.names = TRUE))
+# Daten laden
+bwght <- load("bwght.Rda")
+bwght
+getwd()
+load("C:/Users/lukas/Dropbox/Loose Projects/Youtube/Intro R/bwght.Rda")
+load("bwght.Rda")
+rm(list = ls(all.names = TRUE))
+# Daten laden
+load("bwght.Rda")
+View(bwght)
+# Unser Datensatz ist nicht vollst?ndig - NA steht für fehlenden Eintrag
+incomplete <- bwght[!complete.cases(bwght), ]
+nrow(incomplete)
+library(tidyverse)
+glimpse(bwght)
+summary(bwght$bwghtlbs)
+rm(list = ls(all.names = TRUE))

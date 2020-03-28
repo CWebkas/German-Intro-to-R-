@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1585046550606.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1546508517",
+    "id" : "11D9BC4",
+    "lastKnownWriteTime" : 1585050147,
+    "last_content_update" : 1585050147547,
+    "path" : "C:/Users/lukas/Dropbox/Loose Projects/Youtube/Intro R/5_Statistik mit R_Regression.R",
+    "project_path" : "5_Statistik mit R_Regression.R",
+    "properties" : {
+        "cursorPosition" : "29,86",
+        "scrollLine" : "17"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
